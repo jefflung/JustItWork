@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/default.css">
+        <title>HTML-5</title>
+    </head>
+    <body style="background-color:lemonchiffon;">
+    <!-- Select Option -->
+    <!-- creates a dropdown selection box, the first option is pre-defined on screen load -->
+    <h2>Select Option</h2>
+    <label for="consoles">Choose a game console &#127918;:</label>
+
+    <select name="consoles" id="consoles" style="background-color:lightblue;">
+      <option value="default" >Select an Option</option>
+      <option value="xbox" >Xbox</option>
+      <option value="playstation" style="background-color:rgb(186, 230, 173);">Playstation</option>
+      <option value="wii" style="background-color:rgb(230, 173, 225);">Wii</option>
+      <option value="dreamcast" style="background-color:rgb(186, 230, 173);">Dreamcast</option>
+    </select>
+    <hr>
+    <!-- hr = horizontal rule, which draws a line across the page. br = break, this moves items to the next line -->
+
+
+    <!-- Radio Button -->
+    <!-- the user is only able to select one option using a radio button-->
+    <h2>Radio Button</h2>
+    <p>Select your fruit preference from the options below:</p>
+    <form>
+        <input type="radio" id="apple" name="fruit" value="apple">
+        <label for="apple"> &#127822;</label>
+        <br>
+        <input type="radio" id="banana" name="fruit" value="banana">
+        <label for="banana"> &#127820;</label>
+        <br>
+        <input type="radio" id="cherry" name="fruit" value="cherry">
+        <label for="cherry"> &#127826;</label>
+        <br>
+        <input type="radio" id="kiwi" name="fruit" value="kiwi">
+        <label for="kiwi">&#129373;</label>
+        <br>
+        <input type="radio" id="pineapple" name="fruit" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+    </form>
+    <br>
+
+    <input type="radio" id="BMW" name="cars" value="BMW">
+    <label for="BMW">BMW</label>
+    <input type="radio" id="Audi" name="cars" value="Audi">
+    <label for="Audi">Audi</label>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <!-- Checkbox -->
+    <!-- User can select multiple or no options with a checkbox -->
+    <h2>Checkbox</h2>
+    <p>How do you travel to work? Tick &#9989; all that apply:</p>
+    <form>
+        <input type="checkbox" id="walk" name="transport" value="walk">
+        <label for="walk"> Walk </label>
+        <br>
+        <input type="checkbox" id="drive" name="transport" value="drive">
+        <label for="drive"> Drive </label>
+        <br>
+        <input type="checkbox" id="public" name="transport" value="public">
+        <label for="public"> Public transport </label>
+        <input type="submit" value="submit">
+    </form>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    
+    <!-- Data List -->
+    <!-- The <datalist> tag specifies a list of pre-defined options for an <input> element.
+         id attribute must be equal to the <input> element's list attribute (this binds them together) -->
+
+    <h2>Data List</h2>
+    
+    <label for="potato">Choose your potato option &#127840;:</label>
+    <input list="cooking" name="potato" id="potato" required>
+
+    <datalist id="cooking">
+        <option value="Jacket">
+        <option value="Boiled">
+        <option value="Mashed">
+        <option value="Saute&#769;e">
+        <option value="Dauphinoise">
+        <option value="Sliced">
+    </datalist>
+<br>
+    <label for="potato2">Choose your potato option &#127840;:</label>
+    <input list="cooking2" name="potato2" id="potato2" placeholder="Potato Choice" required>
+ 
+    <datalist id="cooking2">
+      <option value="Jacket">Option 1</option>
+      <option value="Boiled">Option 2</option>
+      <option value="Mashed">Option 3</option>
+      <option value="Saute&#769;e">Option 4</option>
+      <option value="Dauphinoise">Option 5</option>
+      <option value="Sliced">Option 6</option>
+    </datalist>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+
+<label for="current">Choose your current job</label>
+<input list="Job" name="Job" id="current" required>
+<!-- To connect 2 things need to happen: 
+  1) Label for attr. links with Input ID
+  2) Datalist ID links with input list (list replaces type from previous examples)
+  -->
+<datalist id="Job">
+    <option value="Customer service">
+    <option value="Data Analyst">
+    <option value="Live Chat">
+    <option value="Beauty consultant">
+</datalist>
+
+
+
+
+
+    <!-- Fieldset and Legend -->
+    <!-- The <fieldset> tag is used to group related elements in a form and draws a box around them -->
+    <!-- The <legend> tag defines a caption for the <fieldset> element -->
+   <h2>Fieldset and Legend</h2>    
+    <form style="margin: 100px;">
+      <fieldset> <!-- draws a box around grouped items-->
+        <legend>Profile:</legend> <!-- the caption for the grouped items-->
+          <label for="first">First name:</label>
+          <input type="text" id="first" name="first" required>
+          <br>
+          <label for="last">Last name:</label>
+          <input type="text" id="last" name="last">
+          <br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+          <br>
+      </fieldset>
+      <fieldset>
+        <legend>Card Details:</legend>
+        <label for="cardname">Card Name:</label>
+        <input type="text" id="cardname" name="cardname" required>
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+    
+    </body>
+</html>
+
+<!-- https://www.surveymonkey.co.uk/r/W2ZDF7P -->
+
+<!-- Restaurant or Cafe, design feature on the site, which enables a user to order a meal. 
+  Hot drinks, yes/no option for milk. -->
+<div >
+  <form id="order" action="/HTML/actionpage.html" target="_blank" style="margin: 100px;">
+    <fieldset>
+      <!-- Menu/Form Heading-->
+      <legend>Order:</legend>
+      
+      <!-- Meal selection -->
+      <h2>Sandwiches</h2>
+      <p>All our sandwiches come accompanied with chips &#127839; and a green salad &#129367;</p>
+      
+      <label for="meal">Choose your sandwich filling &#129386;:</label>
+      <input list="options" name="meal" id="meal" required>
+
+      <datalist id="options">
+          <option value="Sausage and Onion">Option 1</option>
+          <option value="Cheese and Onion">Option 2</option>
+          <option value="Ham and Cheese">Option 3</option>
+          <option value="Egg and Watercress">Option 4</option>
+          <option value="Hog Roast with Apple Sauce">Option 5</option>
+          <option value="Tikka and Mango Chutney">Option 6</option>
+      </datalist>
+
+      <!--Drink Selection -->
+      <h2>Drinks</h2>
+
+      <label for="drink">Choose your drink &#9749;:</label>
+      <input list="drinks" name="drink" id="drink" required>
+
+      <datalist id="drinks">
+          <option value="Water">Option 1</option>
+          <option value="Tea">Option 2</option>
+          <option value="Coffee">Option 3</option>
+          <option value="Coke (Cola)">Option 4</option>
+          <option value="Lemonade">Option 5</option>
+          <option value="Iced Tea">Option 6</option>
+      </datalist>
+
+      <!--Milk? -->
+      <h2>*Hot Drinks</h2>
+      <p> Do you require milk? &#128004;:</p>
+    
+      <input type="radio" id="no" name="milk" value="no">
+      <label for="no"> No</label>
+      <br>
+      <input type="radio" id="yes" name="milk" value="yes">
+      <label for="yes"> Yes</label>
+      <br>
+      <input type="radio" id="lactofree" name="milk" value="lactofree">
+      <label for="lactofree"> Lactofree</label>
+      <br>
+      <input type="radio" id="coconut" name="milk" value="coconutmilk">
+      <label for="coconut"> Coconut</label>
+    
+      <br>
+      <br>
+      <!--Submit -->
+      <input type="submit" value="Submit" style="background-color:darkgreen; color:white; border-radius:25%;">
+      <input type="reset" value="Reset" style="background-color:darkred; color:white; border-radius:25%;">
+    </fieldset>
+  </form>
+
+  <div id="thanks" >
+      <h3>Thank You</h3>
+      <p>Your Order has been submitted :)!</p>
+  </div>
+  
+
+
+<audio controls autoplay muted>
+  <source src="/images/sample-12s.mp3" type="audio/mpeg">
+</audio>
+
+<audio src="/images/sample-12s.mp3" type="audio/mpeg" controls autoplay loop muted width="100%"></audio>
+
+</div>

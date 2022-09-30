@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/HTML/actionpage.html" target="_blank">
+        <label for="first">First name:</label>
+        <input type="text" id="first" name="first" placeholder="firstname" minlength="10">
+        <br>
+        <label for="last">Last name:</label>
+        <input type="text" id="last" name="last" placeholder="lastname" required>
+        <br>
+        <!-- email, dob, phone, submit, reset -->
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="phone" id="phone" name="phone">
+        <br>
+        <input type="submit" id="submit" value="Submit your form here"><input type="reset" id="reset" value="Reset Form">
+    </form>
+        <!-- #kit quick to create div id kit .kit for class -->
+        <!-- input name can group different items in different groups with different "name" in input --> 
+    <form>
+            <label for="potato">choose your potato option &#127840;:</label>
+            <input list="cooking" name="potato" id="potato" required>
+            <datalist id="cooking">
+                <option value="Jacket">
+                <option value="Boiled">
+            </datalist>
+    </form>
+    <form style="margin:100px;">
+        <fieldset>
+            <legend>Profile:</legend>
+                <label for="first">First name:</label>
+                <input type="text" id="first" name="first" required>
+                <br>
+                <label for="first">Last name:</label>
+                <input type="text" id="last" name="last" required>
+                <br>
+                <label for="first">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <br>
+                <label for="first">Birthday:</label>
+                <input type="text" id="birthday" name="birthday" required>
+                <br>
+
+        </fieldset>
+        
+
+    </form>
+
+    <!--To connect 2 things need to happen:
+        1) Label for attr. links with Input ID
+        2) Datalist ID links with input list (list replaces type from previous examples)
+        -->
+    <form>
+        <label for="Current">Choose your current job</label>
+        <input list="Job" name="Job" id="Current" required>
+        <datalist id="Job">
+            <option value="Customer service">
+            <option value="Data Analyst">
+            <option value="Live Chat">
+            <option value="Beauty consultant">
+        </datalist>
+    </form>
+    <br>
+
+    <!-- Restaurant or Cafe, design feature on the site, which enables a user to order a meal.
+        Hot drinks, yes/no option for milk. -->
+    <form>
+        <fieldset>
+            <legend>Hot drinks</legend>
+            <p>Please choose a drink:</p>
+            <input list="Drinks" name="Drinks" id="Drink" required><!--input id needs to be different with datalist id or will confuse-->
+            <datalist id="Drinks">
+                <option value="Latte">Latte</option>
+                <option value="Cappuchino">Cappuchino</option>
+                <option value="Mocha"></option>
+                <option value="Flat white"></option>
+            </datalist>
+            <p>Do you want milk?</p>
+            <input type="radio" id="ymilk" name="milk" value="ymilk">
+            <label for="milk">yes</label>
+            <input type="radio" id="nmilk" name="milk" value="nmilk">
+            <label for="milk">no</label>
+            <br>
+            <hr>
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>

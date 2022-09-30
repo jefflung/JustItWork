@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/default.css">
+        <title>HTML-4</title>
+    </head>
+    <body>
+
+
+        <!-- HTML Semantic Tags -->
+        <!-- These are elements which describe the job they do
+         e.g. <form>, <table>, <article>, <header>, <footer> -->
+        
+        <!-- Below is a standard format for a webpage inside the <body> of a html document. 
+            Identify the Semantic Tags-->
+        <header id="top" class="one">
+            <h1> Just IT Bootcamp </h1>
+            <p class="two"> What is HTML about? </p>
+        </header>
+        <nav>
+            <a href="/HTML/HTML-1.html">HTML Lesson 1</a>
+            <a href="/HTML/HTML-2.html"> HTML Lesson 2</a>
+            <a href="/HTML/HTML-3.html"> HTML Lesson 3</a>
+        </nav>
+        <div class="one">
+            <h2 class="two heading">Part One</h2>
+            <!-- The text below is known as Lorem ipsum text and is used as dummy text in development-->
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus nisl, sagittis ut lacus mattis, aliquam sollicitudin nisl. 
+                Etiam tincidunt nec diam a faucibus. Nulla tristique sem eros, vel dictum ligula ultrices id. Ut consequat quam non dapibus bibendum. 
+                In ac arcu odio. Nulla augue magna, varius non auctor a, vehicula vel risus. Proin nec massa ut orci feugiat placerat. 
+                Mauris vehicula nulla a enim cursus, quis lacinia tortor imperdiet. Praesent sodales aliquam nibh, vel consectetur nibh cursus interdum. 
+                Nullam vulputate pellentesque mauris.</p>
+        </div>
+        <div class="two">
+            <h2 class="one heading">Part Two</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus nisl, sagittis ut lacus mattis, aliquam sollicitudin nisl. 
+                Etiam tincidunt nec diam a faucibus. Nulla tristique sem eros, vel dictum ligula ultrices id. Ut consequat quam non dapibus bibendum. 
+                In ac arcu odio. Nulla augue magna, varius non auctor a, vehicula vel risus. Proin nec massa ut orci feugiat placerat. 
+                Mauris vehicula nulla a enim cursus, quis lacinia tortor imperdiet. Praesent sodales aliquam nibh, vel consectetur nibh cursus interdum. 
+                Nullam vulputate pellentesque mauris.</p>
+        </div>
+        <footer>
+            <p>page owner: Tim Jones &#169</p>
+            <p><a href="#"></a>email address</p>
+        </footer>
+
+        <!-- Challenge: Suggest a semantic tag that could replace <div> -->
+
+        <div></div>
+        <section></section> -- 
+        <article></article> -- 
+        <main></main> --
+        <span></span> <!-- inline: so olny takes room that's required-->
+        <aside></aside>
+        <header></header>
+        <footer></footer>
+        <blockquote></blockquote>
+        <figure></figure>
+
+        <br>
+
+        <blockquote id="test" class="quote" cite="http://www.worldwildlife.org/who/index.html">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+        </blockquote>
+
+        <br>
+
+
+        <!-- Ids and Classes  -->
+
+        <!-- The Class attribute is often used to point to a class name in a style sheet (CSS). 
+        It can also be used by a JavaScript (JS) to access and manipulate elements with the specific class name -->
+
+        <!-- Classes can be used on ANY HTML element and are case sensitive -->   
+        <div class="one"> This element has the class of one, which I have predefined in a CSS document</div>
+        <div class="two"> This element has the class of two, which I have predefined in a CSS document</div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- The ID attribute is similar to a class with the exception that it only specifies a unique id for an HTML element.
+        This means that ID's can't be used across mulitple elements -->
+        <h1 id="title" class="title heading">This heading has the class of "title", on its own it behaves in the same way to a id</h1>
+        <br>
+
+
+
+
+
+        <!-- Specificity. 1)ID 2)Class 3)Elements. In CSS a "." = Class and a "#" = ID -->
+
+        <div id="two"> <!-- Green, Small, Cursive Font-->
+            <h2 id="title" class="title">However inside this div with the id two, you can see that it behaves differently</h2> 
+            <!-- aquamarina, font different, bold, italic-->
+            <p  id="b" class="a b c">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            <!-- (p1)Cambria, lime green, bold, small font (p)-->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            <!-- (p2)same as the parent apart from color(p)-->
+            <p class="a b c">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            <!--(p3)Cambria, green (p), bold, large font-->
+        </div>
+
+        <!-- Challenge create div that contains a heading and two paragraphs, apply classes and id's -->
+        <!-- (the concept is what matters at this stage - you will not have a CSS document to apply colour)-->  
+
+        <div id="section-A">
+            <h3 class="subhead shadow"> Lorem Ipsum</h3>
+            <p class="text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea et iste officiis inventore vitae ratione quas nisi quod, molestiae culpa velit veritatis ex nihil, magni nemo ipsa fugit? Et, repellendus. </p>
+            <p class="blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dolorum repellat ipsa fugiat harum vero doloremque ex architecto, ullam quae earum dolores, at possimus, quidem rem laudantium eaque? Possimus, quos.</p>
+        </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <!-- HTML Forms -->
+        <!-- A form uses the <form> tag (semantic tag :) ) -->
+        <!-- For each row of the form two lines of code are needed using <label> and <input>-->
+
+        <!-- <label> will be the text describing the box e.g. "First name:", it will also have a for attribute 
+             that enables it to link with the the input's id (these need to be the same)-->
+
+        <!-- <input> will have multiple attributes, these will change depending on input type.
+             Standard attributes include "type"(determines type of input), "id"(may be use by CSS or JS) 
+             and name(this will link to the label via "for") -->
+
+        <!-- Basic -->
+        <form>
+            <label for="first">First name:</label><br>
+            <input type="text" id="first" name="first"><br>
+            
+            <label for="last">Last name:</label><br>
+            <input type="text" id="last" name="last">
+            <!-- email, dob, phone, submit, reset-->
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        <!-- Form Input Types -->
+        <form action="/HTML/actionpage.html" target="_blank">
+            <label for="first">First name:</label>
+            <input type="text" id="first" name="first" placeholder="firstname" minlength="3" maxlength="50" required>
+            <br>
+            <label for="last">Last name:</label>
+            <input type="text" id="last" name="last" placeholder="lastname" required>
+            <br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <input type="submit" id="submit" value="Submit your form here">
+            <input type="reset" value="Reset Form">
+        </form>
+        
+        <br>
+        <div style="background-color:lightblue; color:darkblue;">
+            <form action="/HTML/actionpage.html" target="_blank">
+                <label for="first">First name:</label><br>
+                <input type="text" id="first" name="first" placeholder="firstname" minlength="5" maxlength="100" required>
+                <br>
+                <label for="last">Last name:</label><br>
+                <input type="text" id="last" name="last" placeholder="lastname" required>
+                <br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email">
+                <br>
+                <label for="birthday">Birthday:</label><br>
+                <input type="date" id="birthday" name="birthday">
+                <br>
+                <br>
+                <input type="submit" id="submit" value="Submit your form here">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <!-- Reset-->
+            <input type="button" value="Button">
+
+
+        <br>
+        <br>
+
+        <!-- Date-->
+        <form>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+        </form>
+
+        <form>
+            <label for="anniversary">Anniversary:</label>
+            <input type="date" id="anniversary" name="anniversary">
+        </form>
+
+        <br>
+        <br>
+
+
+        <!-- Email-->
+        <form>
+            <label for="e">Enter your email:</label>
+            <input type="email" id="e" name="e">
+        </form>
+
+        <!-- Extra Reading for email inputs -->
+        <!-- https://www.abstractapi.com/tools/email-regex-guide -->
+        <!-- https://emailregex.com/-->
+
+        <!--https://www.surveymonkey.co.uk/r/W2ZDF7P -->
+       
+
+      <a href="/HTML/HTML-2.html">CLICK ME</a>
+      <a href="#top">TOP OF PAGE</a>
+
+    </body>
+</html>
